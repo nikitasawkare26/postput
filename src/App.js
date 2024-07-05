@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
+import PostForm from './component/PostForm';
+import PutForm from './component/PutForm';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>POST and PUT API Example</h1>
+      <h2>Create a new entry (POST)</h2>
+      <PostForm />
+      <h2>Update an existing entry (PUT)</h2>
+      <PutForm />
     </div>
   );
-}
+};
 
 export default App;
